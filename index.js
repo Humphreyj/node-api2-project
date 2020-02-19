@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const server = express();
-const port = 3030;
+const port = process.env.PORT;
 server.use(express.json())
 
 const apiRoutes  = require('./api/apiRoutes');
